@@ -17,7 +17,7 @@ async function getQuotes() {
   const quote = AllQuotes[index].text;
   const creator = AllQuotes[index].author;
 
-  text.innerHTML = quote;
+  text.innerHTML = `${quote}`;
   author.innerHTML = `- ${creator}`;
 }
 

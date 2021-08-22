@@ -1,7 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap");
 
 $font-main: "Hahmlet", serif;
+$font-position: center;
 
 body {
   font-family: $font-main;
+  background: linear-gradient(#e66465, #9198e5) fixed;
+  height: 100%;
+}
+.container {
+  margin: auto;
+}
+.container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: $font-position;
+}
+.container h5 {
+  font-weight: bold;
+  text-align: $font-position;
+}
+
+.main-area {
+  text-align: $font-position;
+  margin-top: 3rem;
+}
+
+.main-area .text {
+  margin: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-area .author {
+  margin: 2rem;
+  font-size: 0.8rem;
+}
+
+#quotes-btn {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 38px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+  #quotes-btn :hover {
+    background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color: #408c99;
+  }
+  #quotes-btn :active {
+    position: relative;
+    top: 1px;
+  }
 }
